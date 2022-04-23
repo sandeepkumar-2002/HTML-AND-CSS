@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_On_Selectors</title>
+    <style>
+        h1 {
+            background-color: bisque;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        /* div p{
+            color: black;
+            font-weight: bold;
+            background-color: coral;
+        } */
+
+        /* if p is contained by any li which is contained by div */
+        /* div li p{
+            color: crimson;
+            background-color: aqua;
+            font-weight: bold;
+        } */
+
+        /* if p is right inside div then this css will be applied */
+        /* div > p{
+            color: black;
+            font-weight: bold;
+            background-color: coral;
+        } */
+
+        /* wo paragraph jiska pichla sibling p ho or (if p is right after div)*/
+        div+p {
+            color: antiquewhite;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is mosre on More_On_Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+                <li>this will not get affected</li>
+                <p>this is the para inside</p>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>respoinsive or size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* width: 200px; */
+            /* height: 300px; */
+            height: 100vh;                   /* dashboard ka pura height */
+            width: 100vw;                     /* dashboard ka pura width */
+            font-size: 10px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        
+         /* #first{ */
+         /* font-size: 3em; */
+         /*  padding: 3em;  */                       /* 3*3*10 (paddinf * fontsize in em * fondsize in px) */
+         /* } */
+        
+         /* #second{ */
+         /*  font-size: 3rem; */                /* 25*3=75px (for both)*/
+         /* padding: 3rem;         */
+         /* }  */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is heading</h1>
+        <h1 id="second">this is second heading</h1> 
+        <h1 id="third">this is third heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to home</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .background_video {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0%;
+            /*  sabse bottom par */
+            /* top:0%;*/
+            /* sabse top par */
+            /* background: rgba(255, 127, 80, 0); */
+            color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 10px;
+            margin-left: -6px;
+            text-align: center;
+        }
+
+        .content img {
+            margin: -27px 0px;
+            margin-right: 19px;
+            padding: 0px 0px;
+            width: 5%;
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header .left {
+            display: inline-block;
+            border: 2px solid red;
+            left: 34px;
+            top: 7px;
+            margin: 7px 2px;
+            padding:10px 32px;
+            color: white;
+            position: absolute;
+        }
+
+        .header .mid {
+            display: inline-block;
+            border: 2px solid green;
+            margin: 17px 692px;
+            padding: 10px 32px;
+            width: 27%;
+            color: white;
+            position: absolute;
+        }
+
+        .header .right {
+            display: inline-block;
+            border: 2px solid green;
+            margin: 7px 2px;
+            padding: 10px 32px;
+            right: 34px;
+            top: 6px;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- embidding vedio in background -->
+    <video autoplay muted loop id="my_video" class="background_video">
+        <source src="./videos/puppet.mp4" type="video/mp4">
+    </video>
+
+    <!-- <audio controls autoplay> <source src="rain.ogg" type="audio/ogg">
+    <source src="./audio/rain-on-the-deck-by-prettysleepy-art-10483.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <!-- some overlay words or content to describe the video -->
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                i am left
+            </div>
+
+            <div class="mid">
+                i am mid
+            </div>
+
+            <div class="right">
+                i am right
+            </div>
+        </div>
+        <div class="content">
+            <img src="./img/qiBo9ejLT.png" alt="error loading">
+            <h1><strong>Landmark..</strong></h1>
+            <p>-------Sandeep Art Gallery-------</p>
+            <p> <strong>110,Agrawal_Colony,Hamidganj,Patthermill_Road,Daltonganl,Palamu,Jharkhand </strong></p>
+        </div>
+    </div>
+</body>
+
+</html>

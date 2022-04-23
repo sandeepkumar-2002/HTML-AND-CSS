@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Art Gallery</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=My+Soul&family=Roboto:wght@100&family=Square+Peg&display=swap"
+        rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=My+Soul&family=Roboto:wght@100&family=Square+Peg&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/fantasy-g5a229087f_1920.jpg');
+            /* background-repeat: no-repeat;
+               background-size: cover; */
+            /* height: 4000px; */
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 7px;
+        }
+
+        .left img {
+            width: 88px;
+            /* filter: invert(100%);*/
+            /* black ko white and white ko black karne k liye inver function use hota hai */
+            margin-left: 31px;
+        }
+
+        .left div {
+            line-height: 22px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 28%;
+            margin: 12px 725px;
+            /* border: 2px solid rgb(6, 183, 253); */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid rgb(136, 255, 0); */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.ctive {
+            text-decoration: underline;
+            color: bisque;
+        }
+
+        .btn {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0px 9px;
+            background-color: rgb(69 118 114 / 5%);
+            ;
+            color: white;
+            padding: 3px 14px;
+            /* border: 2px solid gray; */
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(68, 80, 83);
+            color: bisque;
+        }
+
+        .container {
+            font-size: 15px;
+            border: 2px solid white;
+            margin: 196px 63px;
+            padding: 6px 38px;
+            width: 23%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            display: block;
+            width: 380px;
+            padding: 5px;
+            border: 2px solid #000;
+            margin: 10px auto;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container h3 {
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+            text-decoration: underline;
+            font-size: 25px;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: 20px auto;
+            border-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/qiBo9ejLT.png" alt="error">
+            <div>Sandeep Art Gallery</div>
+        </div>
+
+
+        <!-- mid box for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./home.html" class="active" target="_blank">Home</a></li>
+                <li><a href="./about_us.html" target="_blank" target="_blank">About Us</a></li>
+                <li><a href="./art_level .html" target="_blank">Art Level</a></li>
+                <li><a href="./contact_us.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+        <!-- right box for buttoms -->
+        <div class="right">
+            <button class="btn">chat with us</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>for any query</h3>
+        <h1>Enter your details below</h1>
+        <form action="Loaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="date" name="" placeholder="Enter your Date Of Birth">
+                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your Address">
+                <input type="email" name="" placeholder="Enter your email">
+                <input type="number" name="" placeholder="Enter your Mobile Number">
+
+                <button class="btn">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

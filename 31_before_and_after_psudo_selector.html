@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psudo selector</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=My+Soul&family=Roboto:wght@100&family=Square+Peg&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            background: url(./assets/fantasy-g5a229087f_1920.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            margin: 3px 223px;
+            font-family: 'Josefin Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+
+        section::before {
+            content: "this is content";
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">service</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>welcome to coading world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus qui voluptas quae, eveniet
+            perferendis assumenda voluptates totam. Rerum, ullam harum ad voluptates aperiam sapiente corrupti
+            maxime quis saepe placeat?</p>
+    </section>
+</body>
+
+</html>
