@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and animations</title>
+</head>
+<style>
+    .container {
+        /* display: flex; */
+        background-color: chartreuse;
+    }
+
+    .box {
+        background-color: aqua;
+        width: 250px;
+        height: 250px;
+
+        position: relative;
+        /* (kyunki main isse move kar saku page pe ) */
+
+        /* hume pahla animation hatane ka jarurat nai hai hum ek sath 2 animation laga sakte hai*/
+        animation-name: sandeep1;
+        animation-name: sandeep2;
+
+        animation-duration: 2s;
+        animation-iteration-count: 5;
+        /* animation-iteration-count: infinite; */
+
+        /* animation end me atka rah jaiga*/
+        /* animation-fill-mode: forwards; */
+
+
+        /* animation end me khatm hoke apne original jagah pe aa jaiga*/
+        /* animation-fill-mode: alternate; */
+
+        /* animation-timing-function: ease-in; */
+
+        /* animation-delay: 3s; */
+
+        /* animation-direction: reverse; */
+
+
+        /* these properties can be set using this shorthand*/
+        /*  animation: animation-name animation-duraation animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+        /* example */
+        /* animation: sandeep2 5s ease-in 1s 12 backwards  ; */
+    }
+
+    @keyframes sandeep1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }
+    }
+
+    @keyframes sandeep2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 250px;
+            left: 0px;
+        }
+
+        75% {
+            top: 250px;
+            left: 250px;
+        }
+
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+
+</html>

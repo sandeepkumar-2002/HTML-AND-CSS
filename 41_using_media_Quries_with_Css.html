@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid + media quries</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px) {
+        body {
+            background-color: rgb(255, 30, 0);
+
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:500px) and (max-width:800px) {
+        body {
+            background-color: rgb(141, 238, 141);
+
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: rgb(255, 243, 131);
+
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: bisque;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span>about</span>
+            <span>services</span>
+            <span>contacts</span>
+        </nav>
+        <section class="bdr">
+            <h2> learn css in hindi </h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nisi nam molestiae, maiores nesciunt
+                autem delectus aut eaque facilis reprehenderit doloremque vero dolorum error dolore. Porro dolorem
+                maxime possimus quidem aperiam vel nam ipsam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non dignissimos atque nisi
+                reprehenderit, animi, est magni harum ratione dolorem sapiente eius inventore possimus laborum officia
+                commodi quaerat rem consectetur! Doloremque eum laborum et debitis recusandae qui assumenda ex
+                reprehenderit odit eaque harum non unde obcaecati excepturi eos praesentium, molestiae ipsa deserunt
+                quos dicta minima placeat pariatur earum. Aspernatur vero optio, asperiores error cum ratione
+                perspiciatis quae provident commodi hic quo maxime reprehenderit? Illo, harum maiores officiis at odio
+                quaerat, soluta vel commodi culpa illum delectus voluptatibus, rerum omnis nesciunt sed ullam
+                necessitatibus nobis! Beatae ut voluptatum omnis quasi, praesentium sapiente deserunt delectus ex magni
+                voluptatibus quam quia incidunt consequuntur, quaerat nesciunt? Nesciunt aut delectus eum consectetur
+                harum. Laborum voluptas necessitatibus cum!
+            </h2>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright sandeep2022</footer>
+</body>
+
+</html>
